@@ -43,14 +43,18 @@ public class TicketMachineTest
     public void printTicketTest(){
         TicketMachine testTicketMachine = new TicketMachine(13);
         
-        assertEquals("Ticket price: 13 cents. Your total is 0.",testTicketMachine.printTicket()); 
+        assertEquals("Ticket price: 13 cents. Your total is 0.",testTicketMachine.printTicket());
+        assertEquals(Integer.valueOf(1), testTicketMachine.getTicketNumber());
+        assertEquals(Integer.valueOf(2), testTicketMachine.incrementTicketNumber());
+        assertNotEquals(Integer.valueOf(3), testTicketMachine.getTicketNumber());
     }
     
     @Test
     public void printTicketTest2(){
         TicketMachine testTicketMachine = new TicketMachine(40);
         
-        assertNotEquals("Ticket price: 13 cents. Your total is 0.", testTicketMachine.printTicket());        
+        assertNotEquals("Ticket price: 13 cents. Your total is 0.", testTicketMachine.printTicket());
+        assertEquals(Integer.valueOf(1), testTicketMachine.getTicketNumber());
     }
     
     @Test
@@ -61,7 +65,8 @@ public class TicketMachineTest
             testTicketMachine.printTicket();
     }
     
-        assertEquals(Integer.valueOf(10), testTicketMachine.getTicketNumber()); 
+        assertEquals(Integer.valueOf(10), testTicketMachine.getTicketNumber());
+        assertNotEquals(Integer.valueOf(9), testTicketMachine.getTicketNumber());
     }
     
 }
