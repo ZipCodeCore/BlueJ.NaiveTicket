@@ -9,31 +9,43 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.1
 * Create a TicketMachine object on the object bench.
-* Upon viewing its methods, `getBalance`, `getPrice`, `insertMoney`, `printTicket`.
-* Use `getPrice` method to view the value of the price of the tickets that was set when this object was created.
-* Use `insertMoney` method to simulate inserting an amount of money into the machine.
-* Use `getBalance` to check that the machine has a record of the amount inserted.
+* Upon viewing its methods, `getBalance`, `getPrice`, `insertMoney`, `printTicket`:
+	* Use `getPrice` method to view the value of the price of the tickets that was set when this object was created.
+		* I set it to 500
+	* Use `insertMoney` method to simulate inserting an amount of money into the machine.
+		* I inserted 700
+	* Use `getBalance` to check that the machine has a record of the amount inserted.
+		* Yes - balance is 700
 	* You can insert several separate amounts of money into the machine, just like you might insert multiple coins or notes into a real machine. Try inserting the exact amount required for a ticket. As this is a simple machine, a ticket will not be issued automatically, so once you have inserted enough money, call the `printTicket` method. A facsimile ticket should be printed in the BlueJ terminal window.
+		* gives a string: "Ticket price: 500 cents. Your total is 700."
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
+	* 0, which seems bad
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
+		* When I insert 400 after inserting 700 and printing a ticket, the ticket prints, thinking that I've inserted 1100. The balance also seems to blank out after printing
 	* What happens if you insert too much money into the machine – do you receive any refund?
+		* nope!
 	* What happens if you do not insert enough and then try to print a ticket?
+		* still seems to work: same sentence as before, with 400 instead of 500. That's bad.
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
+	* Seems that it doesn't really check the amount that's inserted, and it zeroes the balance when printing.
 
 ### Exercise 2.5
 * Create another ticket machine for tickets of a different price.
 	* Buy a ticket from that machine.
+		* OK
 	* Does the printed ticket look different?
+		* just the price is different
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
+	* These classes don't exist in this package, so I'm not sure what this is referring to
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -41,7 +53,7 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
-
+	* yes, `public class` is the one that works
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
 	* What error message do you get when you now press the compile button?
