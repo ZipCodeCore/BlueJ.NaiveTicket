@@ -17,37 +17,37 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
-When printed the balance is 0.
+	* When printed the balance is 0.
 
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
-	* Do you notice anything strange about the machine’s behavior? 
-		Allows you to buy a ticket no matter the amount you put in and you do not get change back 
+	* Do you notice anything strange about the machine’s behavior?
+		* Allows you to buy a ticket no matter the amount you put in and you do not get change back 
 	
 	* What happens if you insert too much money into the machine – do you receive any refund?
-		No - the money will balance out to zero. 
+		* No - the money will balance out to zero. 
 	
 	* What happens if you do not insert enough and then try to print a ticket?
-		You still can purchase a ticket 
+		* You still can purchase a ticket 
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
-The ticket machine is taking any integer and not comparing it to the set price, so the user cause insert any amount of money and still purchase a ticket but will not receive a refund. 
+	* The ticket machine is taking an integer and not comparing it to the set price for the ticket, so the user can insert 		 any amount of money and still purchase a ticket but will not receive a refund. 
 
 ### Exercise 2.5
 * Create another ticket machine for tickets of a different price.
 	* Buy a ticket from that machine.
-	* Does the printed ticket look different?
-	The price of the ticket displayed the sum of the different amount that I inserted.
+	* Does the printed ticket look different
+		* The price of the ticket displayed the sum of the different amount that I inserted.
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
 
-public class Student {
+`public class Student {
 }
 public class LabClass {
-}
+}`
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -55,6 +55,8 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
+
+	* A .java file can only have one public class and it should be named as same as the .java file. But .java file can have several non public classes.
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram? The class diagram is no longer color cordinated to display the start 		and end of the block
