@@ -21,7 +21,7 @@ its 0
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior? 
-	* What happens if you insert too much money into the machine – do you receive any refund? nope the balance changes to 0
+	* What happens if you insert too much money into the machine – do you receive any refund? It takes all your money and gives no change or refund
 	* What happens if you do not insert enough and then try to print a ticket? It still prints a ticket
 	
 ### Exercise 2.4
@@ -39,7 +39,7 @@ public class Student
 {
 }
 
-public class Student
+public class LabClass
 {
 }
 
@@ -48,7 +48,7 @@ Does it matter whether we write<br>
 `public class TicketMachine`<br>
 or<br>
 `class public TicketMachine`<br>
-in the outer wrapper of a class?
+in the outer wrapper of a class? yes, we get a compiler error if it is in the wrong order.
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram? yup
@@ -66,28 +66,35 @@ it is posssible but i dont know why there is no syntax error
 		2. balance
 		3. total
 		4. ticketNumber
-	Constructers: 
-		1. 
+	constructers: 
+		1. TicketMachine(Integer ticketCost)
+	methods:1. calculateTotal()
+		2. getBalance()
+		3. getPrice()
+		4. getTicketNumber()
+		5. incrementTicketNumber()
+		6. insertMoney()
+		7. printTicket()
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
-
+It has the same name as the class. It doesn't return a value
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
 ```java
-private int count;
-private Student representative;
-private Server host;
+private int count; int
+private Student representative; String
+private Server host; String
 ```
 
 ### Exercise 2.12
 * What are the names of the following fields?
 
 ```java
-private boolean alive;
-private Person tutor;
-private Game game;
+private boolean alive; alive
+private Person tutor; tutor
+private Game game; game
 ```
 ### Exercise 2.13
 
@@ -96,30 +103,30 @@ In the following field declaration from the TicketMachine class<br>
 ```java
 private int price;
 ```
-does it matter which order the three words appear in?
+does it matter which order the three words appear in? yup if you switch it, it causes a symbol error
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
-possible?
+possible? yes
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14
-* Is it always necessary to have a semicolon at the end of a field declaration?
+* Is it always necessary to have a semicolon at the end of a field declaration? yes
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
-
+private int status;
 ### Exercise 2.16
-* To what class does the following constructor belong?
+* To what class does the following constructor belong? Student
 ```
 public Student(String name)
 ```
 
 ### Exercise 2.17
-* How many parameters does the following constructor have and what are their types?
+* How many parameters does the following constructor have and what are their types? 2 (String, Double)
 ```
 public Book(String title, double price)
 ```
