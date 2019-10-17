@@ -17,13 +17,13 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
-
+its 0
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
-	* Do you notice anything strange about the machine’s behavior?
-	* What happens if you insert too much money into the machine – do you receive any refund?
-	* What happens if you do not insert enough and then try to print a ticket?
-
+	* Do you notice anything strange about the machine’s behavior? 
+	* What happens if you insert too much money into the machine – do you receive any refund? nope the balance changes to 0
+	* What happens if you do not insert enough and then try to print a ticket? It still prints a ticket
+	
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
 
@@ -31,9 +31,17 @@ Work through all these exercises. You edit this file with your answers for these
 * Create another ticket machine for tickets of a different price.
 	* Buy a ticket from that machine.
 	* Does the printed ticket look different?
-
+	yup
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
+
+public class Student
+{
+}
+
+public class Student
+{
+}
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -43,17 +51,23 @@ or<br>
 in the outer wrapper of a class?
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
-	* Do you notice a change in the class diagram?
-	* What error message do you get when you now press the compile button?
-	* Do you think this message clearly explains what is wrong?
+	* Do you notice a change in the class diagram? yup
+	* What error message do you get when you now press the compile button? <identifier> expected
+	* Do you think this message clearly explains what is wrong? kinda
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
-
+it is posssible but i dont know why there is no syntax error
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
+	fields: 1. price
+		2. balance
+		3. total
+		4. ticketNumber
+	Constructers: 
+		1. 
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
