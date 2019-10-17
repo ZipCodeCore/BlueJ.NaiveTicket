@@ -132,7 +132,7 @@ public Book(String title, double price)
 ```
 
 ### Exercise 2.18
-* Can you guess what types some of the `Book` class’s fields might be?
-* Can you assume anything about the names of its fields?
+* Can you guess what types some of the `Book` class’s fields might be? String, int, double
+* Can you assume anything about the names of its fields? I can assume that there might be a pages field that is an int, and a author field that is a String.
 
 READ upto and INCLUDING section 2.15 of this chapter.
