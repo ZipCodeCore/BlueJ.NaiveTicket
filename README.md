@@ -56,29 +56,31 @@ or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
 
-	* A .java file can only have one public class and it should be named as same as the .java file. But .java file can have several non public classes.
+* A .java file can only have one public class and it should be named as same as the .java file. The public class in java is a blueprint of objects which specifies properties and methods of objects belonging to that particular class. But a .java file can have several non public classes.
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
-	* Do you notice a change in the class diagram? The class diagram is no longer color cordinated to display the start 		and end of the block
-	* What error message do you get when you now press the compile button? The error message stated that an "identifier" 		is expected - meanging class needs to be identified.
-	* Do you think this message clearly explains what is wrong? Yes a class need to be identified as public or private to 		show the access level of the class, and there should be atleast one public class in each file. 
+	* Do you notice a change in the class diagram?
+		* The class diagram is no longer color cordinated to display the start and end of the block - the green signifier of the block is gone.
+	* What error message do you get when you now press the compile button? 
+		* The error message stated that an "identifier" is expected - meanging class needs to be identified.
+	* Do you think this message clearly explains what is wrong? 
+		* Yes a class need to be identified as public or private to show the access level of the class, and there should be atleast one public class in each file. 
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
-Yes
+	* Yes
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
-	
-	Contructor - TicketMachince
-	Fields - getPrice, getBalance
-	Methods - price, balace, total
+		* Contructor - TicketMachince
+		* Fields - getPrice, getBalance
+		* Methods - price, balace, total
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
-It takes in a parameter of (int ticketCost)
+	* It takes in a parameter of `ticketCost`
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
@@ -104,15 +106,16 @@ In the following field declaration from the TicketMachine class<br>
 ```java
 private int price;
 ```
-does it matter which order the three words appear in? Yes
+does it matter which order the three words appear in? <b>Yes</b>
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
-possible? The diagram shows that there is an error by putting red lines on the class box.
+possible? 
+		* The diagram shows that there is an error by putting red lines on the class box.
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14
-* Is it always necessary to have a semicolon at the end of a field declaration? Yes
+* Is it always necessary to have a semicolon at the end of a field declaration? <b>Yes</b>
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
@@ -126,7 +129,7 @@ possible? The diagram shows that there is an error by putting red lines on the c
 ```
 public Student(String name)
 ```
-	*Student
+* Student
 	
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
@@ -134,11 +137,11 @@ public Student(String name)
 public Book(String title, double price)
 ```
 
-	*two parameters: one being a string the other is a double
+* two parameters: one being a string the other is a double
 
 ### Exercise 2.18
 * Can you guess what types some of the `Book` class’s fields might be?
-	* It could have more fields depending on how many other constructors are in place.
+	* It could have more fields depending on how many other constructors are in place. 
 * Can you assume anything about the names of its fields?
 	* We do not know if that fields are actually named after the parameters in the constructor. 
 
