@@ -151,7 +151,7 @@ int status;
 ```
 public Student(String name)
 ```
-
+it belongs to the class Student
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
 ```
@@ -167,8 +167,43 @@ int bookId;
 String author;
 int isbnNumber;
 int readingLevel;
- 
 
 * Can you assume anything about the names of its fields?
+
+### Exercise 2.19
+public Pet(String petsName)
+  {
+		name = petsName;
+  }
+### Exercise 2.20
+constructor cannot be used for variable declaration.
+
+### Exercise 2.21
+getPrice() method returns the price of a ticket.
+getBalance() method returns the amount of money already inserted for the next ticket.
+
+### Exercise 2.22
+What is total amount of money inserted?
+
+### Exercise 2.23
+No
+
+### Exercise 2.24
+public Integer getTotal()
+{
+	 return total;
+}
+
+### Exercise 2.25
+missing return statement
+
+### Exercise 2.26
+printTicket() returns String value
+getPrice() returns integer value
+
+### Exercise 2.27
+Yes
+insertMoney method returns Integer value to calculate and output the total money inserted.
+printTicket method returns String value to print out the ticket 
 
 READ upto and INCLUDING section 2.15 of this chapter.
