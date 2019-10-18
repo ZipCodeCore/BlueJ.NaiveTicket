@@ -17,12 +17,17 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
+0
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
+It is not giving any refund and 
+
 	* What happens if you insert too much money into the machine – do you receive any refund?
+No
 	* What happens if you do not insert enough and then try to print a ticket?
+Ticket did not show up in blueJ terminal
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -34,6 +39,13 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
+public class Student
+{
+}
+Public class LabClass
+{
+}
+
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -41,19 +53,31 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
+It matters
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
+Yes
 	* What error message do you get when you now press the compile button?
+Errors found in the class
+
 	* Do you think this message clearly explains what is wrong?
+No
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+It was possible to leave out the word public from the outer wrapper the TicketMachine class
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
+Constructer-TicketM,getPraiceatchine
+Fields-price
+       Balance
+       Total
+Methods- ,getBalance,getTicket,getTicketNumber,
+        
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
