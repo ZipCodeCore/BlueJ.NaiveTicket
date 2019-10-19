@@ -136,7 +136,7 @@ public class TicketMachine
             balance = balance - price;
 
             if(ticketNumber == 1){
-                return "Ticket price: " + price + " cents.\n" +
+                return "Ticket price: " + price + " cents." + "\n" +
                 "Your balance is " + balance +
                 " cents.\nYou have purchased 1 ticket.";
             } else {
