@@ -35,6 +35,14 @@ Work through all these exercises. You edit this file with your answers for these
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
 
+public class Student {
+	Inner part of Student.
+}
+
+public class LabClass {
+	Inner part of LabClass.
+}
+
 ### Exercise 2.7
 Does it matter whether we write<br>
 `public class TicketMachine`<br>
@@ -42,13 +50,17 @@ or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
 
+Yes
+
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
-	* Do you notice a change in the class diagram?
-	* What error message do you get when you now press the compile button?
+	* Do you notice a change in the class diagram? yes, criss-cross pattern covers class box
+	* What error message do you get when you now press the compile button? 
+		- Error message: `<identifier>` expected
 	* Do you think this message clearly explains what is wrong?
 
 ### Exercise 2.8
-* Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+* Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class. 
+Yes it is possible.
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
@@ -57,23 +69,24 @@ in the outer wrapper of a class?
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
+-The other methods list the return type of the methods. The constructor does not include a return type.
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
 ```java
-private int count;
-private Student representative;
-private Server host;
+private int count; // integer
+private Student representative; // Student object
+private Server host; // Server object
 ```
 
 ### Exercise 2.12
 * What are the names of the following fields?
 
 ```java
-private boolean alive;
-private Person tutor;
-private Game game;
+private boolean alive; // alive
+private Person tutor; // tutor
+private Game game; // game
 ```
 ### Exercise 2.13
 
@@ -82,7 +95,7 @@ In the following field declaration from the TicketMachine class<br>
 ```java
 private int price;
 ```
-does it matter which order the three words appear in?
+does it matter which order the three words appear in? YES!
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
 possible?
@@ -90,16 +103,22 @@ possible?
 	* Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14
-* Is it always necessary to have a semicolon at the end of a field declaration?
+* Is it always necessary to have a semicolon at the end of a field declaration? YES!
 * Once again, experiment via the editor.
-* The rule you will learn here is an important one, so be sure to remember it.
+* The rule you will learn here is an important one, so be sure to remember it. 
+- The semicolon communicates to the compiler the end of a line of code.
 
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
 
+```java
+int status;
+```
+
 ### Exercise 2.16
 * To what class does the following constructor belong?
+- constructor belongs to the Student class
 ```
 public Student(String name)
 ```
@@ -109,9 +128,10 @@ public Student(String name)
 ```
 public Book(String title, double price)
 ```
+- The Book constructor has 2 parameters: title and price
 
 ### Exercise 2.18
-* Can you guess what types some of the `Book` class’s fields might be?
+* Can you guess what types some of the `Book` class’s fields might be? String and double
 * Can you assume anything about the names of its fields?
 
 READ upto and INCLUDING section 2.15 of this chapter.
