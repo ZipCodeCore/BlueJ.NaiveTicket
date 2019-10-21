@@ -95,4 +95,10 @@ public class TicketMachine
         
         return "Ticket price: " + price + " cents. " + "Your total is " + total + ".";
     }
+    
+    
+    public static void main(String[] args){
+        
+    }
+    
 }
