@@ -45,7 +45,8 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
-	* These classes don't exist in this package, so I'm not sure what this is referring to
+	* `public class Student`
+	* `public class LabClass`
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -53,23 +54,30 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
-	* yes, `public class` is the one that works
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
+		* it didn't seem to change, other than the cross-hatching about the error
 	* What error message do you get when you now press the compile button?
+		* `<identifier expected>`
 	* Do you think this message clearly explains what is wrong?
+		* I suppose - I'm inferring from this that immediately following `class`, it expects the name of the class. If that's correct, then I guess that it's clear.
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+	* It is, which surprised me. I thought that you had to have a public class (and only one) in each file.
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
+		* Constructor: `TicketMachine` (which is what the constructor has to be called - this one takes the input `int ticketCost`)
+		* Fields: `price`, `balance`, `total`
+		* Methods: `getPrice()`, `getBalance()`, `insertMoney()`, `printTicket()`
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
-
+	* Doesn't return (explicitly) anything, doesn't have a declared type (except that the name is the type)
+	
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
@@ -78,6 +86,7 @@ private int count;
 private Student representative;
 private Server host;
 ```
+* `int`, `Student`, `Server`
 
 ### Exercise 2.12
 * What are the names of the following fields?
@@ -87,6 +96,9 @@ private boolean alive;
 private Person tutor;
 private Game game;
 ```
+
+* `alive`, `tutor`, `game`
+
 ### Exercise 2.13
 
 In the following field declaration from the TicketMachine class<br>
@@ -98,32 +110,40 @@ does it matter which order the three words appear in?
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
 possible?
+		* Just the error indication when changing - only the given order works
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
+		* OK
 
 ### Exercise 2.14
 * Is it always necessary to have a semicolon at the end of a field declaration?
+	* Yes - that's a complete statement
 * Once again, experiment via the editor.
+	* Yup.
 * The rule you will learn here is an important one, so be sure to remember it.
 
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
+	* `private int status;`
 
 ### Exercise 2.16
 * To what class does the following constructor belong?
 ```
 public Student(String name)
 ```
+	* `Student`
 
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
 ```
 public Book(String title, double price)
 ```
+	* 2: `String` and `double`
 
 ### Exercise 2.18
 * Can you guess what types some of the `Book` class’s fields might be?
+	* title: `String`, price: `double` (it could have more fields that are auto-set, but in this case, only an internal id number seems likely, as author, year, etc. would need more info input. It's also possible that there are other constructors that take more inputs, and that this is a bare-minimum constructor).
 * Can you assume anything about the names of its fields?
-
+	* No - we can assign these dummy variables to different names in the constructor.
 READ upto and INCLUDING section 2.15 of this chapter.
