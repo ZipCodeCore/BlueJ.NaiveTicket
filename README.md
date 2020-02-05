@@ -18,11 +18,17 @@ Work through all these exercises. You edit this file with your answers for these
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
 
+/*0;*/
+
+
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
 	* What happens if you insert too much money into the machine – do you receive any refund?
 	* What happens if you do not insert enough and then try to print a ticket?
+
+
+	/*Strings with the ticket price and your total. All of the money is taken. No refund is given. No balance was shown but it still pints a ticket.;*/
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -32,9 +38,19 @@ Work through all these exercises. You edit this file with your answers for these
 	* Buy a ticket from that machine.
 	* Does the printed ticket look different?
 
+	?*The ticket are the same. The sting with the total is the only difference.;*/
+
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
 
+
+/*public class Student(){
+
+}
+
+public class LabClass(){
+
+};*/
 ### Exercise 2.7
 Does it matter whether we write<br>
 `public class TicketMachine`<br>
@@ -47,17 +63,28 @@ in the outer wrapper of a class?
 	* What error message do you get when you now press the compile button?
 	* Do you think this message clearly explains what is wrong?
 
+	/*Yes. Public must be in front of class.
+	"Error(s) found in class" "Press K or click link on right to go to next error."
+	Yes;*/
+
+
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+
+/*Yes, you can.;*/
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
 
+	/*The fields are price, balance, total. The constructor is TicketMachine. The methods are the getters getPrice, getTicketNumber and getBalance.;*/
+
+
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
 
+ /*It is another TicketMachine and parameters and is assigning values to price, balance, total and ticketNumber.;*/
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
@@ -66,6 +93,7 @@ private int count;
 private Student representative;
 private Server host;
 ```
+/*They are private fields.;*/
 
 ### Exercise 2.12
 * What are the names of the following fields?
@@ -75,6 +103,8 @@ private boolean alive;
 private Person tutor;
 private Game game;
 ```
+/*The fields are alive, tutor, and game.;*/
+
 ### Exercise 2.13
 
 In the following field declaration from the TicketMachine class<br>
@@ -89,29 +119,38 @@ possible?
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
 
+ /*Yes.You private is class type. It must must have a class definition before int. int must then be declared as price.;*/
+
 ### Exercise 2.14
 * Is it always necessary to have a semicolon at the end of a field declaration?
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
+ /*The answer is usually. It is not needed at the end of a block, }.;*/
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
+
+/*private int status;*/
 
 ### Exercise 2.16
 * To what class does the following constructor belong?
 ```
 public Student(String name)
 ```
+/*public*/
 
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
 ```
 public Book(String title, double price)
 ```
+/*2*/
 
 ### Exercise 2.18
 * Can you guess what types some of the `Book` class’s fields might be?
 * Can you assume anything about the names of its fields?
+
+/*author, genre, pageNumber, publisher, dateOfPublish*/
 
 READ upto and INCLUDING section 2.15 of this chapter.
