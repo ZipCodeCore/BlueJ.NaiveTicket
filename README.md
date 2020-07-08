@@ -2,6 +2,11 @@
 
 The second Objects lab, from the BlueJ book's second chapter.
 
+First you need to FORK this repo into your account, then you need to CLONE that foreked repo, the one in your account. 
+When you are finished with your code, be sure to ADD/COMMIT and PUSH your code to your repo.
+
+Use the URL from your repo as the submission to the portal. 
+
 Look for the [Chapter 2 file](./doc/BlueJ-objects-first-ch2.pdf) you need in the [doc](./doc) folder.
 There is 35 pages of reading and exercises in the chapter.
 
