@@ -22,11 +22,11 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
-
+-- Returned 0 after inserted 500 per the above instructions and printed the ticket
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
-	**Insert 2 x 300 balance = 600**
+	<br> -- Insert 2 x 300 balance = 600
 	* What happens if you insert too much money into the machine – do you receive any refund?
 	* What happens if you do not insert enough and then try to print a ticket?
 
