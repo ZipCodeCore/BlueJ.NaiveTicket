@@ -14,6 +14,7 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.1
 * Create a TicketMachine object on the object bench.
+**Created ticket that costs 500**
 * Upon viewing its methods, `getBalance`, `getPrice`, `insertMoney`, `printTicket`.
 * Use `getPrice` method to view the value of the price of the tickets that was set when this object was created.
 * Use `insertMoney` method to simulate inserting an amount of money into the machine.
@@ -22,6 +23,7 @@ Work through all these exercises. You edit this file with your answers for these
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
+**Returned 0 after inserted 500 per the above instructions and printed the ticket**
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
