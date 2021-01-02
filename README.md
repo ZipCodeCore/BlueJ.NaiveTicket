@@ -30,6 +30,7 @@ Work through all these exercises. You edit this file with your answers for these
 	* What happens if you insert too much money into the machine – do you receive any refund?
 <br> -- Can print and endless amount of tickets ... The balance is still at 0 and there was no refund
 	* What happens if you do not insert enough and then try to print a ticket?
+<br> -- will still receive a printed ticket
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
