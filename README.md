@@ -60,7 +60,7 @@ in the outer wrapper of a class?
     * Do you notice a change in the class diagram? 
     *** // Yes, TicketMachine is crossed out with hashes, meaning it cannot be compiled succesfully.
     * What error message do you get when you now press the compile button? 
-    *** // the error message says "<identifier> expected".
+    *** // the error message from making this change says "identifier expected".
     * Do you think this message clearly explains what is wrong?
     *** // I do not think that this clearly explains what is wrong.
 
