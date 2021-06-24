@@ -11,7 +11,7 @@ import org.junit.Test;
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class TicketMachineTest
+ class TicketMachineTest
 {
     /**
      * Default constructor for test class TicketMachineTest
