@@ -65,35 +65,43 @@ in the outer wrapper of a class?
     * <identifier> expected
     
     * Do you think this message clearly explains what is wrong?
-    * 
+    * Somewhat, but I think it could be more clear on what an identifier would be. 
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+* It is possible because it allows me to compile and run the tests. 
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
-    * Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
+    * Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you,
+    * to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
     * Hint: There is only one constructor in the class.
+    * Methods - getPrice(), getTicketNumber(), getBalance(), 
+    * Constructor - TicketMachine
+    * Fields - price, balance, total, ticketnumber, 
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
+* Constructors must be named the same as the class and they cannot return anything.
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
 ```java
-private int count;
-private Student representative;
-private Server host;
+private int count; - primitive
+private Student representative; - object
+private Server host; - object
 ```
+
+
 
 ### Exercise 2.12
 * What are the names of the following fields?
 
 ```java
-private boolean alive;
-private Person tutor;
-private Game game;
+private boolean alive; - alive
+private Person tutor; - tutor
+private Game game; - game
 ```
 ### Exercise 2.13
 
@@ -105,33 +113,36 @@ private int price;
 does it matter which order the three words appear in?
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
     * Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
-possible?
+possible? Yes, and they do not seem to be possible in any other order, or it will not compile. 
+
     * Check by pressing the compile button to see if there is an error message.
     * Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14
 * Is it always necessary to have a semicolon at the end of a field declaration?
+* Yes. 
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
+* public int status;
 
 ### Exercise 2.16
 * To what class does the following constructor belong?
 ```
-public Student(String name)
+public Student(String name)-Student
 ```
 
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
 ```
-public Book(String title, double price)
+public Book(String title, double price)-Two, one of String type and one of Double type
 ```
 
 ### Exercise 2.18
-* Can you guess what types some of the `Book` class’s fields might be?
-* Can you assume anything about the names of its fields?
+* Can you guess what types some of the `Book` class’s fields might be? - String and Double?
+* Can you assume anything about the names of its fields? - title and price?
 
 READ upto and INCLUDING section 2.15 of this chapter.
