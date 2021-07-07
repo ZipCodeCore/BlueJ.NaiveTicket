@@ -13,6 +13,9 @@ import org.junit.Test;
  */
 public class TicketMachineTest
 {
+    private TicketMachine ticketMa1;
+    private java.lang.String string1;
+
     /**
      * Default constructor for test class TicketMachineTest
      */
@@ -23,6 +26,15 @@ public class TicketMachineTest
     @Before
     public void setUp()
     {
+        ticketMa1 = new TicketMachine(20);
+        ticketMa1.getTicketNumber();
+        ticketMa1.insertMoney(300);
+        string1 = ticketMa1.printTicket();
+        ticketMa1.getBalance();
+        ticketMa1.incrementTicketNumber();
+        ticketMa1.getTicketNumber();
+        ticketMa1.calculateTotal();
+        ticketMa1.getBalance();
     }
     
     @After
