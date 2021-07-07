@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kolling
  * @version 2008.03.30
  */
-public class TicketMachine
+class TicketMachine
 {
     // The price of a ticket from this machine.
     private Integer price;
@@ -90,7 +90,7 @@ public class TicketMachine
         incrementTicketNumber();
         // Update the total collected with the balance.
         total = total + balance;
-        // Clear the balance.
+        // Clear the balance.https://github.com/kendrang/BlueJ.NaiveTicket.git
         balance = 0;
         
         return "Ticket price: " + price + " cents. " + "Your total is " + total + ".";
