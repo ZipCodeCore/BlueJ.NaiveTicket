@@ -19,6 +19,8 @@ public class TicketMachine
     private Integer total;
     // The number of tickets printed.
     private Integer ticketNumber;
+    // Entering a new price for the ticket.
+    private Integer newPrice;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -40,7 +42,7 @@ public class TicketMachine
     {
         return price;
     }
-    
+
     /**
      * Return ticketNumber.
      * (Increments on each print.)
@@ -51,12 +53,33 @@ public class TicketMachine
     }
 
     /**
+     * Return the total amount of money inserted into the machine
+     */
+    public Integer getTotal()
+    {
+        return total;
+    }
+
+    /**
      * Return the amount of money already inserted for the
      * next ticket.
-     */
+     *
     public Integer getBalance()
     {
         return balance;
+    }
+
+    public String prompt(){
+        return "Please insert the correct amount of money.";
+    }
+
+    /**
+     * Display the price of the ticket on the terminal
+     * We return a String rather than System.out.println
+     * because it prints easier when the method is called
+     */
+    public String showPrice(){
+        return "The price of a ticket is " + price + " cents.";
     }
 
     /**
@@ -64,20 +87,37 @@ public class TicketMachine
      */
     public Integer insertMoney(Integer amount)
     {
-        balance = balance + amount;
-        return balance;
+        if(amount <= 0){
+            System.out.println("Invalid amount.");
+            return balance;
+        } else {
+            balance = balance + amount;
+            total = total + amount;
+            return balance;
+        }
     }
-    
-    public Integer calculateTotal(){
-        total = balance + total;
-        return total;
-    }
-    
+
     public Integer incrementTicketNumber(){
         ticketNumber++;
         return ticketNumber;
     }
-    
+
+    /**
+     * Resets the value of the total to zero
+     */
+    public String emptyTotalBalance(){
+        total = 0;
+        balance = 0;
+        return "Your total is now 0.\nYour balance is now 0.";
+    }
+
+    /**
+     * Sets a new price to the ticket
+     */
+    public Integer setPrice(Integer newPrice){
+        price = newPrice;
+        return price;
+    }
 
     /**
      * Print a ticket.
@@ -86,13 +126,24 @@ public class TicketMachine
      */
     public String printTicket()
     {
-        //Increment the number of tickets printed
-        incrementTicketNumber();
-        // Update the total collected with the balance.
-        total = total + balance;
-        // Clear the balance.
-        balance = 0;
-        
-        return "Ticket price: " + price + " cents. " + "Your total is " + total + ".";
+        //Conditional that checks if there is enough money
+        if(balance < price){
+            return "Please insert the proper amount of money.";
+        } else {
+            //Increment the number of tickets printed
+            incrementTicketNumber();
+            // Clear the balance.
+            balance = balance - price;
+
+            if(ticketNumber == 1){
+                return "Ticket price: " + price + " cents." + "\n" +
+                "Your balance is " + balance +
+                " cents.\nYou have purchased 1 ticket.";
+            } else {
+                return "Ticket price: " + price + " cents.\n" +
+                "Your balance is " + balance + " cents.\nYou have purchased "
+                + ticketNumber + " tickets.";
+            }
+        }
     }
 }
